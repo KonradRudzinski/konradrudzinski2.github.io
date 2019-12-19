@@ -1,0 +1,35 @@
+/* Stylowanie tekstu w ofercie */
+.tg-0lax{
+    text-align: center;
+}
+
+ol.carousel-indicators li {
+    margin-bottom: 20px;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
+body {
+    position: relative; 
+}
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+
+.affix ~ .container-fluid {
+    position: relative;
+    top: 50px;
+}
