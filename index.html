@@ -25,7 +25,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="200">
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Menu</a>
+    <a class="navbar-brand" href="#">K.R</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -42,17 +42,19 @@
                 <a class="nav-link" href="#Oferta">Oferta</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="#Omnie">O mnie</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#Kontakt">Kontakt</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#Inne">Inne</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Więcej</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="multimedia.html">Multimedia</a>
+                    <a class="dropdown-item" href="#">Formularz</a>
                 </div>
             </li>
         </ul>
@@ -64,7 +66,7 @@
 -->
     </div>
 </nav>
-    
+
     <main role="main" class="container">
         <a class='anchor' id="Galeria"></a> 
         
@@ -113,29 +115,47 @@
             </table>
         </div>
         
-        
-        <div class="text-center mt-5 pt-5">
-            <h1>Bootstrap starter template</h1>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        </div>
-                <div class="text-center mt-5 pt-5">
-            <h1>Bootstrap starter template</h1>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        </div>
-                <div class="text-center mt-5 pt-5">
-            <h1>Bootstrap starter template</h1>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        </div>
-                <div class="text-center mt-5 pt-5">
-            <h1>Bootstrap starter template</h1>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        </div>
-                <div class="text-center mt-5 pt-5">
-            <h1>Bootstrap starter template</h1>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <a class='anchor' id="Omnie"></a>
+        <div class="jumbotron">
+          <h1 class="display-3">O Mnie</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur gravida hendrerit. Nunc ullamcorper at enim nec varius. Cras bibendum odio non velit gravida, id porttitor ipsum commodo. Pellentesque tincidunt mollis nulla ac congue. Maecenas laoreet dapibus erat non eleifend. Mauris convallis lectus vitae dui porta, vel pharetra tortor varius. Integer viverra, lorem ut commodo volutpat, tortor tellus mattis purus, eu gravida justo magna nec mauris. Phasellus ut odio tristique, pellentesque odio vel, sagittis orci. Duis ut purus ut nunc blandit luctus. Ut vel posuere ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam mauris sapien, aliquet malesuada dapibus in, efficitur vitae elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vehicula erat justo, eget efficitur nisi fermentum sed. Phasellus commodo facilisis felis.</p>
+          <hr class="my-4">
+          <p>Bądź na bieżąco z moją twórczością i obserwuj mnie na facebooku i instagramie.</p>
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/rudzinski.photo" role="button">Facebook</a>
+            <a class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/rudzinski.photo/" role="button">Instagram</a>
+
+          </p>
         </div>
         
         
+        
+        <a class='anchor' id="Kontakt"></a>
+        <form>
+          <fieldset>
+            <legend>Kontakt</legend>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Adres Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="twoj@email.com">
+              <small id="emailHelp" class="form-text text-muted">Nie udostępniamy twojego maila nikomu innemu.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleSelect1">Wybierz temat który cię interesuje</label>
+              <select class="form-control" id="exampleSelect1">
+                <option>Sesja zdjęciowa samochodu</option>
+                <option>Sesja portretowa</option>
+                <option>Reportaż</option>
+                <option>Inne</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleTextarea">Wiadomość</label>
+              <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Wyślij</button>
+          </fieldset>
+        </form> 
 
     </main><!-- /.container -->
 
@@ -148,8 +168,7 @@
         $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
         });
-        /* Ten skrypt likwiduje problem z zostającymi tooltipami po kliknięciu*/
-
+        
         /*Ten skrypt zamyka navbar po kliknięciu w trybie mniejszego okna*/
         $('.navbar-collapse a').click(function(){
             $(".navbar-collapse").collapse('hide');
@@ -157,30 +176,9 @@
         /* Ten skrpyt wywołuje scrollspy*/ 
         $('body').scrollspy({ target: '#navbar-example' })
         
-        
-        
-        /* Płynne scrollowanie */
-        $("#nav ul li a[href^='#']").on('click', function(e) {
-
-           // prevent default anchor click behavior
-           e.preventDefault();
-
-           // store hash
-           var hash = this.hash;
-
-           // animate
-           $('html, body').animate({
-               scrollTop: $(hash).offset().top
-             }, 1000, function(){
-
-               // when done, add hash to url
-               // (default click behaviour)
-               window.location.hash = hash;
-             });
-
-        });
 
     </script>
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
