@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Portfolio">
     <meta name="author" content="Konrad Rudziński">
-    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <title>Konrad Rudziński Fotografia</title>
     
     <!--Template based on URL below-->
@@ -17,7 +17,8 @@
 
     <!-- Place your stylesheet here-->
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
-    <!-- Jquery -->
+
+            <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
@@ -31,7 +32,7 @@
     </button>
 
     <div class="collapse navbar-collapse  navbar-ex1-collapse" id="navbarsExampleDefault">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Strona główna <span class="sr-only">(current)</span></a>
             </li>
@@ -47,14 +48,11 @@
             <li class="nav-item">
                 <a class="nav-link" href="#Kontakt">Kontakt</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#Inne">Inne</a>
-            </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Więcej</a>
+                <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Więcej</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
                     <a class="dropdown-item" href="multimedia.html">Multimedia</a>
-                    <a class="dropdown-item" href="#">Formularz</a>
+                    <a class="dropdown-item" href="form.html">Formularz</a>
                 </div>
             </li>
         </ul>
@@ -136,27 +134,29 @@
             <legend>Kontakt</legend>
             <div class="form-group">
               <label for="exampleInputEmail1">Adres Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="twoj@email.com">
+              <input type="email" class="form-control" required="" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="twoj@email.com">
               <small id="emailHelp" class="form-text text-muted">Nie udostępniamy twojego maila nikomu innemu.</small>
             </div>
             <div class="form-group">
               <label for="exampleSelect1">Wybierz temat który cię interesuje</label>
-              <select class="form-control" id="exampleSelect1">
-                <option>Sesja zdjęciowa samochodu</option>
-                <option>Sesja portretowa</option>
-                <option>Reportaż</option>
-                <option>Inne</option>
+              <select class="form-control" id="mystuff">
+                <option value="opt1">Sesja portretowa</option>            
+                <option value="opt2">Sesja zdjęciowa samochodu</option>
+                <option value="opt3">Reportaż</option>
+                <option value="opt4">Inne</option>
               </select>
             </div>
             <div class="form-group">
               <label for="exampleTextarea">Wiadomość</label>
-              <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+              <textarea class="form-control" required="" id="exampleTextarea" rows="3"></textarea>
             </div>
-
             <button type="submit" class="btn btn-primary">Wyślij</button>
           </fieldset>
         </form> 
+        
 
+
+        
     </main><!-- /.container -->
 
 
@@ -164,6 +164,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script>
+        
         /*Ten skrypt umożliwia działanie tooltipów*/
         $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
@@ -173,12 +174,13 @@
         $('.navbar-collapse a').click(function(){
             $(".navbar-collapse").collapse('hide');
         });
-        /* Ten skrpyt wywołuje scrollspy*/ 
-        $('body').scrollspy({ target: '#navbar-example' })
-        
 
+        
+        
+        
     </script>
-    <script src="script.js"></script>
+
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

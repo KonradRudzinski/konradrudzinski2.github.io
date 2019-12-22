@@ -3,6 +3,10 @@
     text-align: center;
 }
 
+.container{
+    margin-top: 72px;
+}
+
 ol.carousel-indicators li {
     margin-bottom: 20px;
 }
@@ -29,82 +33,47 @@ legend{
 }
 
 
-/* progress bar */
 
-progress {
-  /* Positioning */
-  position: fixed;
-  left: 0;
-  top: 0;
 
-  /* Dimensions */
-  width: 100%;
-  height: .25em;
-
-  /* Reset the apperance */  
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-
-  /* Get rid of the default border in Firefox/Opera. */
-  border: none;
-
-  /* For Firefox/IE10+ */
-  background-color: transparent;
-
-  /* For IE10+, color of the progress bar */
-  color: red;
+.photo-gallery {
+  color:#313437;
+  background-color:#fff;
 }
 
-progress::-webkit-progress-bar {
-  background-color: transparent;
+.photo-gallery p {
+  color:#7d8285;
 }
 
-.flat::-webkit-progress-value {
-  background-color: red;
+.photo-gallery h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
 }
 
-.flat::-moz-progress-bar {
-  background-color: red;
+@media (max-width:767px) {
+  .photo-gallery h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
 }
 
-.single::-webkit-progress-value {
-  background-color: transparent;
-  background-image: -webkit-linear-gradient(left, transparent, red);
+.photo-gallery .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto 40px;
 }
 
-.single::-moz-progress-bar {
-  background-color: transparent;
-  background-image: -moz-linear-gradient(left, transparent, red);
+.photo-gallery .intro p {
+  margin-bottom:0;
 }
 
-.multiple::-webkit-progress-value {
-  background-image: -webkit-linear-gradient(-45deg, 
-	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
-	                           rgba(0,0, 0, .1) 66%, transparent 66%),
-	                  -webkit-linear-gradient(left, green, red);
+.photo-gallery .photos {
+  padding-bottom:20px;
 }
 
-.multiple::-moz-progress-bar {
-  background-image: -moz-linear-gradient(-45deg, 
-	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
-	                           rgba(0,0, 0, .1) 66%, transparent 66%),
-	                  -moz-linear-gradient(left, green, red);
+.photo-gallery .item {
+  padding-bottom:30px;
 }
 
-.progress-container {
-  width: 100%;
-  background-color: transparent;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: .25em;
-  display: block;
-}
-
-.progress-bar {
-  background-color: red;
-  width: 50%;
-  display: block;
-  height: inherit;
-}

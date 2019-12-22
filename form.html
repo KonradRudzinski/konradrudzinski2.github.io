@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="Konrad Rudziński">
+    <link rel="icon" href="favicon.ico">
+    <title>Konrad Rudziński Fotografia</title>
+    
+    <!--Template based on URL below-->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <!-- Place your stylesheet here-->
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<!--data-offset decyduje o tym kiedy zmieni się podświetlenie aktualnej pozycji na stronie-->
+<body data-spy="scroll" data-target=".navbar" data-offset="200">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">K.R</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse  navbar-ex1-collapse" id="navbarsExampleDefault">
+        <ul class="nav navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Strona główna <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#Galeria">Galeria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#Oferta">Oferta</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#Omnie">O mnie</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#Kontakt">Kontakt</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Więcej</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="multimedia.html">Multimedia</a>
+                    <a class="dropdown-item" href="form.html">Formularz</a>
+                </div>
+            </li>
+        </ul>
+<!--
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+-->
+    </div>
+</nav>
+
+    <main role="main" class="container">
+        
+        <form id="myform" class="col-md-8 pt-2 pb-2 mr-auto ml-auto">
+        <fieldset class="forma ">
+            <legend class="h4">Formularz sesji samochodu</legend>
+            <div class="form-group">
+                <label for="imie_r">Imię</label>
+                <input type="text" class="form-control" required="" id="imie_r" aria-describedby="imieHelp"
+                       placeholder="Wprowadź imię" name="field1">
+            </div>
+            <div class="form-group">
+                <label for="nazwisko_r">Nazwisko</label>
+                <input type="text" class="form-control"  required="" id="nazwisko_r" aria-describedby="nazwiskoHelp"
+                       placeholder="Wprowadź nazwisko" name="field1">
+            </div>
+            <div class="form-group">
+                <label for="email_r">Adres email</label>
+                <input type="email" class="form-control" required="" id="email_r" aria-describedby="emailHelp"
+                       placeholder="Wprowadź email" name="field3">
+                <small id="emailHelp" class="form-text text-muted">Np. adres@email.com</small>
+            </div>
+            <div class="form-group">
+                <label for="tel_r">Telefon</label>
+                <input type="number" class="form-control" required="" id="tel_r" aria-describedby="telHelp"
+                       placeholder="Wprowadź telefon" name="field4">
+                <small id="telHelp" class="form-text text-muted">Np. 111222333</small>
+            </div>
+            <div class="form-group">
+                <label for="Ilość zdjęć">Wybierz ilość zdjęć</label>
+                <select multiple="" class="form-control" id="Ilosc_zdjec" name="field5">
+                    <option selected>3 - 5</option>
+                    <option>5-10</option>
+                    <option>10-20</option>
+                    <option>30+</option>
+                </select>
+            </div>
+            <fieldset class="form-group">
+                <legend>Wersja fizyczna (druk)</legend>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                        Tak
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                        Nie
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="form-group">
+                <legend>Kadry</legend>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input text-left" type="checkbox" value="">
+                        Z zewnątrz
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input text-left" type="checkbox" value="">
+                        Wnętrze
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Detale
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        Felgi
+                    </label>
+                </div>
+            </fieldset>
+            <button type="submit" class="btn btn-info mr-2">Wyślij</button>
+            <button type="reset" class="btn btn-info">Resetuj</button>
+        </fieldset>
+    </form>
+        
+        
+    </main><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/additional-methods.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        /*Ten skrypt umożliwia działanie tooltipów*/
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        });
+        
+        /*Ten skrypt zamyka navbar po kliknięciu w trybie mniejszego okna*/
+        $('.navbar-collapse a').click(function(){
+            $(".navbar-collapse").collapse('hide');
+        });
+        /* Ten skrpyt wywołuje scrollspy*/ 
+        
+        
+        $(document).ready(function () {
+        $('#myform').validate({ // initialize the plugin
+            rules: {
+                field1: {
+                    required: true,
+                    minlength: 2,
+                    lettersonly: true
+                },
+                field2: {
+                    required: true,
+                    lettersonly: true
+                },
+                field3: {
+                    required: true,
+                    email: true
+                },
+                field4: {
+                    required: true,
+                    digits: true,
+                    minlength: 9,
+                    maxlength: 9
+                },
+                field5: {
+                    required: true
+                }
+            },
+            submitHandler: function (form) { // for demo
+                alert('Dane są właściwe'); // for demo
+                return false; // for demo
+            }
+        });
+    });
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
+   
